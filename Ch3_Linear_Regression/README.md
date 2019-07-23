@@ -12,7 +12,10 @@ SLR lives up to its name: it's a straightforward approach for predicting a respo
 \tag{3.1}
 \end{equation}
 $$
-"$\approx$" is read as approximately. We can also  
+"$\approx$" is read as approximately. We can describe (3.1) by saying that we are regressing $Y$ onto $X$. 
+
+![Alt Text](images/3.1.gif)
+
  
 ### 3.1.1 Estimating the Coefficients
 ### 3.1.2 Assessing the Accuracy of the Coefficient Estimates
