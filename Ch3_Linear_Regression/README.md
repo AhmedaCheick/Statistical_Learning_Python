@@ -5,9 +5,14 @@ This chapter is about linear regression, a very simple, yet powerful, approach t
 
 ## 3.1 Simple Linear Regression 
 SLR lives up to its name: it's a straightforward approach for predicting a response <strong>$Y$</strong> on the basis of a <strong>single</strong> predictor $X$. We assume there is approximately a linear relationship between the two. Mathematically it's written as: <br>
- <p align="center">$ Y \approx \beta_0 + \beta_1X$ </p>
- 
- 
+ $$
+\begin{equation}
+  Y \approx \beta_0 + \beta_1X
+\label{eq:SLR}
+\tag{3.1}
+\end{equation}
+$$
+"$\approx$" is read as approximately. We can also  
  
 ### 3.1.1 Estimating the Coefficients
 ### 3.1.2 Assessing the Accuracy of the Coefficient Estimates
