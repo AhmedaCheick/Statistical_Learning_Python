@@ -14,13 +14,6 @@ SLR lives up to its name: it's a straightforward approach for predicting a respo
 $$
 "$\approx$" is read as approximately. We can describe (3.1) by saying that we are regressing $Y$ onto $X$. 
 
-![Alt Text](images/3.1.gif)
-
-<p align="center">
-  <img width="100" height="19" src="images/3.1.png">
-</p>
-<p align="right"> (3.1) </p>
-
  
 ### 3.1.1 Estimating the Coefficients
 ### 3.1.2 Assessing the Accuracy of the Coefficient Estimates
