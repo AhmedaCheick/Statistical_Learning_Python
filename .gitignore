@@ -1,2 +1,8 @@
-# .DS_Store
+# aka Mr.Useless 
 .DS_Store
+
+
+# Never been a fan of checkpoints anyway 
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
