@@ -1,5 +1,8 @@
 # Chapter 3: Linear Regression 
 ---
+
+This chapter is about linear regression, a very simple, yet powerful, approach to supervised learning for predicting a quantitative respone. In this chapter, we review some key ideas underlying the linear regression model, as well as the <strong>least squares</strong> approach, that is commonly used to <strong>fit</strong> a model
+
 ## 3.1 Simple Linear Regression 
 ### 3.1.1 Estimating the Coefficients
 ### 3.1.2 Assessing the Accuracy of the Coefficient Estimates
