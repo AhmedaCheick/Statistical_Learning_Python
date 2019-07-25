@@ -36,7 +36,14 @@ Where $\widehat{y}$ indicates a prediction of $Y$ on the basis of $X$ = $x$. The
 
  
 ### 3.1.1 Estimating the Coefficients
+In practice $\beta_0$ and $\beta_1$ are unknown. We therefore must use the data to estimate those two. <br>
+Let n observation pairs:
+$$(x_1, y1_1), (x_2, y_2)...,(x_n,y_n)$$ <br>
+The advertising data has n = 200. In other words, for every market in the 200 markets we have a TV budget and the product sales. Our goal here is to obtain the estimate coefficients $\hat{\beta_0}$ and $\hat{\beta_1}$ for a line which is the **closest** to all the 200 data points. Take a look at what that line would look like: 
 
+<p align="center">
+  <img width="400" height="300" src=images/ad_data.png>
+</p>
 
 ### 3.1.2 Assessing the Accuracy of the Coefficient Estimates
 ### 3.1.3 Assessing the Accuracy of the Model
