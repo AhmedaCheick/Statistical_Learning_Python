@@ -84,6 +84,18 @@ So, how accurately does a single $\widehat{\mu}$ estimate $\mu$? In general, thi
 $$Var(\widehat{\mu}) = SE(\widehat{\mu})^2 = \frac{\sigma^2}{n}
 ,\tag{3.7}$$
 
+The standard error reflects the amount by which an estimator varies under repeated sampling. Similarely we can compute:
+
+$$SE(\hat{\beta_0})^2 = {\sigma}^2[\frac{1}{n}+\frac{\bar{x}^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2}],$$
+
+$\tag{3.8}$
+
+
+$$SE(\hat{\beta_1})^2 = \frac{\sigma^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2},$$
+
+$\sigma^2$ is unkown, but can be estimated from the data. The estimate of $\sigma$ is known as the *residual standard error* and is given be the formula
+$$RSE = \sqrt{RSS/(n-2)}$$
+Strictly speaking, when $\sigma^2$ is estimated we should write $\widehat{SE}(\hat{\beta_1})^2$ to indicate an estimation has taken place but for simplicity we will drop the hat here. 
 
 
 ### 3.1.3 Assessing the Accuracy of the Model
