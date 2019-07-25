@@ -96,6 +96,16 @@ $$SE(\hat{\beta_1})^2 = \frac{\sigma^2}{\sum_{i=1}^{n} (x_i - \bar{x})^2},$$
 $\sigma^2$ is unkown, but can be estimated from the data. The estimate of $\sigma$ is known as the *residual standard error* and is given be the formula
 $$RSE = \sqrt{RSS/(n-2)}$$
 Strictly speaking, when $\sigma^2$ is estimated we should write $\widehat{SE}(\hat{\beta_1})^2$ to indicate an estimation has taken place but for simplicity we will drop the hat here. 
+Standard errors can be used to compute **confidence intervals**. A 95% confidence interval is defined as a range of values such that with 0.95 probability, the range will contain the true value unknown value of the parameter. It has lower and upper limits computed from the sample data. <br> 
+For linear regression, the 95% confidence intervals for the values $\beta_1$ and $\beta_0$ take the following forms
+
+$$\hat{\beta_1} \pm 2 \cdot SE(\hat{\beta_1}) \tag{3.9}$$ 
+
+Also can be written
+$$[\hat{\beta_1} - 2 \cdot SE(\hat{\beta_1}),  \hat{\beta_1} + 2 \cdot SE(\hat{\beta_1})] \tag{3.10}$$
+
+Similarly
+$$\hat{\beta_0} \pm 2 \cdot SE(\hat{\beta_0}) \tag{3.11}$$
 
 
 ### 3.1.3 Assessing the Accuracy of the Model
