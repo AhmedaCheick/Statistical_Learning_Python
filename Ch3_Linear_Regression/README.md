@@ -77,7 +77,14 @@ $$Y = \beta_0 + \beta_1X + \epsilon \tag{3.5}$$
 Equation (3.5) is the *population regression line* which is the best linear approx to the true relationship. 
 The term $\epsilon$ is a catch-all for what we miss with this simple model. Since the true relationship is probably not linear, and there may be other variables that cause variation in $Y$. $\epsilon$ is typically independent of $X$. <br>
 At first the difference between the population regression line and the least squares line may be subtle and confusing. In practice we don't have access to the first and we are interested in estimating the latter. <br>
-Suppose we are interested in computing the mean $\mu$ of some random variable $Y$. Using the n observations we have access to we can estimate $\mu$. A resonable estimate is $\widehat{\mu}$ = $\bar{y}$ where $\bar{y}$ is the sample mean. The sample will give us a good estimate of the population mean. In the same way, $\hat{\beta_0}$ and $\hat{\beta_1}$ will give us a good estimate to the coefficients $\beta_0$ and $\beta_1$ in the population regression line.
+Suppose we are interested in computing the mean $\mu$ of some random variable $Y$. Using the n observations we have access to we can estimate $\mu$. A resonable estimate is $\widehat{\mu}$ = $\bar{y}$ where $\bar{y}$ is the sample mean. The sample will give us a good estimate of the population mean. In the same way, $\hat{\beta_0}$ and $\hat{\beta_1}$ will give us a good estimate to the coefficients $\beta_0$ and $\beta_1$ in the population regression line. <br>
+The analogy between linear regression and estimation of the mean is an apt one based on the concept of *bias*. On **avergae** we expect $\widehat{\mu}$ to equal $\mu$. That is to say, it can on occasions underestimate or overestimate the population mean. But a huge number of sample means would *exactly* equal the population mean. We say $\widehat{\mu}$ is an *unbiased* estimator of $\mu$. This property of unbiasedness holds also tru for our least squares coefficient estimates. If we could average estimates obtained over a huge number of datasets, then the average would be spot on!
+<br>
+So, how accurately does a single $\widehat{\mu}$ estimate $\mu$? In general, this is answered by computing the *standard error* of $\widehat{\mu}$. The well-known formula 
+$$Var(\widehat{\mu}) = SE(\widehat{\mu})^2 = \frac{\sigma^2}{n}
+,\tag{3.7}$$
+
+
 
 ### 3.1.3 Assessing the Accuracy of the Model
 
