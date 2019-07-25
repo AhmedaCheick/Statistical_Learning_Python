@@ -107,6 +107,18 @@ $$[\hat{\beta_1} - 2 \cdot SE(\hat{\beta_1}),  \hat{\beta_1} + 2 \cdot SE(\hat{\
 Similarly
 $$\hat{\beta_0} \pm 2 \cdot SE(\hat{\beta_0}) \tag{3.11}$$
 
+Standard errors can also be used to compute *hypothesis tests*.
+
+$H_0$: There is no relationship between $X$ and $Y$ $\tag{3.12}$
+*Versus* <br>
+$H_\alpha$: There is some relationship
+
+Mathematically this is written
+$$H_0: \beta_1 = 0$$
+$$H_\alpha: \beta_1 \ne 0$$
+
+To test our hypothesis, we need to determine whether $\hat{\beta_1}$ is sufficiently far from zero that we can be confident that $\beta_1$ is non-zero.  
+
 
 ### 3.1.3 Assessing the Accuracy of the Model
 
