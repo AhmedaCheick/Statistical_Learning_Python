@@ -12,7 +12,25 @@ SLR lives up to its name: it's a straightforward approach for predicting a respo
 \tag{3.1}
 \end{equation}
 $$
-"$\approx$" is read as approximately. We can describe (3.1) by saying that we are regressing $Y$ onto $X$. 
+"$\approx$" is read as approximately. We use it because of the error associated to predicting $Y$. <br> We can describe (3.1) by saying that we are regressing $Y$ onto $X$. For example, $X$ may represent TV ads and $Y$ represents sales. <br>
+ $$
+\begin{equation}
+  sales \approx \beta_0 + \beta_1TV
+\label{eq:sales}
+\
+\end{equation}
+$$ <br>
+
+In (3.1), $\beta_0$ and $\beta_1$ are two <strong>unkown</strong> constants that represent the *intercept* and *slope* terms in the linear model. They're known as *coefficients* or *parameters*. <br>
+We use our **training data** to produce $\hat{\beta_0}$ and $\hat{\beta_1}$ for the **model** coefficients. We use this model to predict future sales based on a particular TV ad by computing: <br>
+
+$$
+\begin{equation}
+ y  = \hat{\beta_0} + \hat{\beta_1}x
+\label{eq:model1}
+\tag{3.2}
+\end{equation}
+$$
 
  
 ### 3.1.1 Estimating the Coefficients
