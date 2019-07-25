@@ -26,14 +26,18 @@ We use our **training data** to produce $\hat{\beta_0}$ and $\hat{\beta_1}$ for 
 
 $$
 \begin{equation}
- y  = \hat{\beta_0} + \hat{\beta_1}x
+ \widehat{y}  = \hat{\beta_0} + \hat{\beta_1}x
 \label{eq:model1}
 \tag{3.2}
 \end{equation}
-$$
+$$ 
+<br>
+Where $\widehat{y}$ indicates a prediction of $Y$ on the basis of $X$ = $x$. The *hat* symbol, $\widehat{}$,  denotes the estimated value for an unknown parameter or coefficient, or the predicted value of the response.
 
  
 ### 3.1.1 Estimating the Coefficients
+
+
 ### 3.1.2 Assessing the Accuracy of the Coefficient Estimates
 ### 3.1.3 Assessing the Accuracy of the Model
 
