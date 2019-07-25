@@ -75,7 +75,10 @@ $$\hat{\beta_0} = \bar{y} - \hat{\beta_1}\bar{x},$$
 In chapter 2 we assumed a true relationship between $X$ and $Y$ in the form $Y = f(X) + \epsilon$ for some unkown $f$, where $\epsilon$ is mean-zero random error term. If we were to approximate $f$ by a linear function then the relationship is
 $$Y = \beta_0 + \beta_1X + \epsilon \tag{3.5}$$
 Equation (3.5) is the *population regression line* which is the best linear approx to the true relationship. 
-The term $\epsilon$ is a catch-all for what we miss with this simple model. Since the true relationship is probably not linear, and there may be other variables that cause variation in $Y$. $\epsilon$ is typically independent of $X$.
+The term $\epsilon$ is a catch-all for what we miss with this simple model. Since the true relationship is probably not linear, and there may be other variables that cause variation in $Y$. $\epsilon$ is typically independent of $X$. <br>
+At first the difference between the population regression line and the least squares line may be subtle and confusing. In practice we don't have access to the first and we are interested in estimating the latter. <br>
+Suppose we are interested in computing the mean $\mu$ of some random variable $Y$. Using the n observations we have access to we can estimate $\mu$. A resonable estimate is $\widehat{\mu}$ = $\bar{y}$ where $\bar{y}$ is the sample mean. The sample will give us a good estimate of the population mean. In the same way, $\hat{\beta_0}$ and $\hat{\beta_1}$ will give us a good estimate to the coefficients $\beta_0$ and $\beta_1$ in the population regression line.
+
 ### 3.1.3 Assessing the Accuracy of the Model
 
 ## 3.2 Multiple Linear Regression 
