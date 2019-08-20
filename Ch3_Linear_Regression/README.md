@@ -139,7 +139,19 @@ The quality of a linear regression fit is typically assessed using two related q
 Even if we knew the true regression line we would not be able to perfectly predict $Y$ from $X$. This is due to the error term $\epsilon$ in equation (3.5), that is associated with every observation. <br>
 The **$RSE$** is an estimate of the standard deviation of $\epsilon$. Roughly speaking, it is the average amount that the response will deviate from the true regression line. It is computed using the formula
 
-$$RSE = \sqrt{\frac{1}{n-2}RSS} = \sqrt{\frac{1}{n-2}(y_i - \hat{y_i})^2} \tag{3.15}$$
+$$RSE = \sqrt{\frac{1}{n-2}RSS} = \sqrt{\frac{1}{n-2}\sum_{i=1}^{n}(y_i - \hat{y_i})^2} \tag{3.15}$$
+
+In the ad example the RSE is 3.26. In other words, actual sales in each market deviate from the true regression line by approximately 3,260 units, on average. <br>
+The RSE is considered a measure of the *lack of fit* of the model (3.5).
+<br>
+<br>
+**$R^2$ Statistic**<br>
+The RSE provides an absolute measure of lack of fit of the model to the data. But since it is measured in the units of Y , it is not always clear what constitutes a good RSE. The $R^2$ statistic provides an alternative measure of fit. It takes the form of a proportion—the proportion of variance explained—and so it always takes on a value between 0 and 1, and is independent of the scale of Y.
+
+$$R^2 = \frac{TSS}{TSS-RSS} = 1 - \frac{RSS}{TSS} \tag{3.17}$$
+
+Where TSS is the *total sum of squares* $\sum(y_i-\bar{y})$
+
 
 ## 3.2 Multiple Linear Regression 
 ### 3.2.1 Estimating the Regression Coefficients 
@@ -149,4 +161,4 @@ $$RSE = \sqrt{\frac{1}{n-2}RSS} = \sqrt{\frac{1}{n-2}(y_i - \hat{y_i})^2} \tag{3
 ### 3.3.1 Qualitative Predictors 
 ### 3.3.2 Extensions of the Linear Model 
 ### 3.3.3 Potential Problems 
-## 3.5 Comparison of Linear Regression with K-Nearest Neighbors 
+## 3.5 Comparison of Linear Regression with K-Nearest Neighbors  
