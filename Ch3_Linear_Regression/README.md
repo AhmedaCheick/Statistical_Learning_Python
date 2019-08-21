@@ -150,7 +150,7 @@ The RSE provides an absolute measure of lack of fit of the model to the data. Bu
 
 $$R^2 = \frac{TSS}{TSS-RSS} = 1 - \frac{RSS}{TSS} \tag{3.17}$$
 
-Where TSS is the *total sum of squares* $\sum(y_i-\bar{y})$
+Where TSS is the *total sum of squares* $\sum(y_i-\bar{y})^2$. TSS measures the total variance in the response $Y$, and can be thought of as the amount of variability inherent in the response before the regression is performed. 
 
 
 ## 3.2 Multiple Linear Regression 
