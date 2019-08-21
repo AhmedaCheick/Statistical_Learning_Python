@@ -150,7 +150,9 @@ The RSE provides an absolute measure of lack of fit of the model to the data. Bu
 
 $$R^2 = \frac{TSS}{TSS-RSS} = 1 - \frac{RSS}{TSS} \tag{3.17}$$
 
-Where TSS is the *total sum of squares* $\sum(y_i-\bar{y})^2$. TSS measures the total variance in the response $Y$, and can be thought of as the amount of variability inherent in the response before the regression is performed. 
+Where TSS is the *total sum of squares* $\sum(y_i-\bar{y})^2$. TSS measures the total variance in the response $Y$, and can be thought of as the amount of variability inherent in the response before the regression is performed. In contrast, $RSS$ measures the amount of variability that is left unexplained after performing the regression. Hence, $TSS - RSS$ measures the amount of variability in the response that is explained (or removed) by performing the regression, and $R^2$ measures the proportion of variability in $Y$ that can be explained using $X$. an $R^2$ that is close to 1 indicates that a large proportion of the variability in the response hs been explained by the regression. It's still challenging to determine what's a *good*  $R^2$ value, and in general, it depends on the application. a value close to 1 might be acceptable in physics and in marketing a value below 0.1 might be realistic! For instance, we may know in the first case that the data come from a linear model, and in the latter extremely the model is just rough approximation to the data, and residual errors due to other unmeasured factors are often very large. 
+<br>
+The $R^2$ statis
 
 
 ## 3.2 Multiple Linear Regression 
