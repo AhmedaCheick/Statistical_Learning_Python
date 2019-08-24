@@ -162,6 +162,7 @@ $r=Cor(X,Y)$, it can be proven that in a simple linear regression $r^2=R^2$. Thi
 
 ## 3.2 Multiple Linear Regression 
 In practice, we often have multiple predictors rather than one. The approach of fitting a seperate simple linear regression model for each is not satisfactory. Each will ignore the others in forming estimates for the coefficients, so we turn to multiple linear regression. We can do this by giving each predictor a separate slope coefficient in a single model. Suppose that we have p distinct predictors. Then the equation takes the form
+
  $$
 \begin{equation}
   Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + .. + \beta_pX_p + \epsilon
@@ -169,6 +170,8 @@ In practice, we often have multiple predictors rather than one. The approach of 
 \end{equation}
 $$
 
+
+We interpret $\beta_j$ as the average effect on Y of a one unit increase in $X_j$, **holding all other predictors fixed**.
 This then becomes in our advertising example as 
 
 $$sales = \beta_0 + \beta_1.TV+ \beta_2.radio+\beta_3.newspaper+\epsilon \tag{3.20}$$
@@ -195,7 +198,34 @@ $$RSS = \sum_{i=1}^{n}(y_i - \hat{y_i})^2
 
 The values $\hat{\beta_0}$, $\hat{\beta_1}$, .., $\hat{\beta_p}$ that minimize (3.22) are the multiple least squares regression coefficient estimates. They are most easily represented using matrix algebra. 
 
+<br>
+Table 3.4 displays the multiple regression coefficient estimates when TV, radio, and newspaper advertising budgets are used to predict product sales using the Advertising data.
+
+<p align="center">
+  <img width="700" height="90" src=images/table3.4.png>
+</p>
+
+An additional 1,000 dollars on radio ads leads to an increase in sales by approximately 189 units. However, **newspaper** coefficient estimate is close to zero with a p-value that is not significant, this isn't the case when we run a simple linear regression against sales. 
+<br>
+
+So what happened?! This difference stems from the fact that in the simple regression case, the slope term represents the average effect of a 1,000 dollars increase in newspaper advertising, ignoring other predictors such as TV and radio. In contrast, in the multiple regression setting, the coefficient for newspaper represents the average effect of increasing newspaper spending by 1,000 dollars while holding TV and radio fixed. Now, consider this table 3.5 showing the correlation matrix for the three predictors.
+
+<p align="center">
+  <img width="800" height="140" src=images/table3.5.png>
+</p>
+
+This reveals a tendency to spend more on newspaper advertising in markets where more is spent on radio advertising (correlation).
+Hence, in a simple linear regression which only examines **sales** versus **newspaper**, we will observe that higher values of newspaper tend to be associated with higher values of sales, even though newspaper advertising does not actually affect sales. In other words, newspaper gets "credit" for the effect of **radio** on sales.
+<br> 
+<br>
+Running a regression of shark attacks versus ice cream sales for data collected at a given beach community over a period of time would show a positive relationship, similar to that seen between sales and newspaper. Of course no one (yet) has suggested that ice creams should be banned at beaches to reduce shark attacks. In reality, higher temperatures cause more people to visit the beach, which in turn results in more ice cream sales and more shark attacks. A multiple regression of attacks versus ice cream sales and temperature reveals that, as intuition implies, the former predictor is no longer significant after adjusting for temperature.
+
 ### 3.2.2 Some Important Questions
+1. Is at least one of the predictors $X_1$ , $X_2$ , . . . , $X_p$ useful in predicting the response?
+2. Do all the predictors help to explain $Y$, or is only a subset of the predictors useful?
+3. How well does the model fit the data?
+4. Given a set of predictor values, what response value should we predict,
+and how accurate is our prediction?
 
 ## 3.3 Other Considerations in the Regression Model 
 ### 3.3.1 Qualitative Predictors 
