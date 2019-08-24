@@ -174,9 +174,12 @@ This then becomes in our advertising example as
 $$sales = \beta_0 + \beta_1.TV+ \beta_2.radio+\beta_3.newspaper+\epsilon \tag{3.20}$$
 
 
+
 ### 3.2.1 Estimating the Regression Coefficients 
 
-Just as we did in the simple linear regression, we need to estimate <br>
+
+Just as we did in the simple linear regression, we need to estimate $\beta_0, \beta_1,..,\beta_p$ <br>
+
 $$\widehat{y}= \hat{\beta_0} + \hat{\beta_1}x_1 + \hat{\beta_2}x_2 + .. + \hat{\beta_p}x_p \tag{3.21}$$
 Using the least squares approach we choose  $\beta_0, \beta_1,..,\beta_p$ to minimize the sum of squared residuals
 $$RSS = \sum_{i=1}^{n}(y_i - \hat{y_i})^2
@@ -186,8 +189,11 @@ $$RSS = \sum_{i=1}^{n}(y_i - \hat{y_i})^2
   <img width="500" height="300" src=images/multi.png>
 </p>
 
+
+
 **note**: This a three-dimensional setting, with two predictors $X_1$ $X_2$ and one response $Y$. The surface (plane) is chosen to minimize the sum of the vertical distances between each observation (shown in red) and the plane. <br>
 
+The values $\hat{\beta_0}$, $\hat{\beta_1}$, .., $\hat{\beta_p}$ that minimize (3.22) are the multiple least squares regression coefficient estimates. They are most easily represented using matrix algebra. 
 
 ### 3.2.2 Some Important Questions
 
