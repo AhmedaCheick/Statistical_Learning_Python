@@ -227,6 +227,17 @@ Running a regression of shark attacks versus ice cream sales for data collected 
 4. Given a set of predictor values, what response value should we predict,
 and how accurate is our prediction?
 
+**One: Is there a relationship between the Response and Predictors?**<br>
+In simple linear regression we checked whether $\beta_1=0$. In multiple linear regression we check whether all coefficients are zero i.e. $\beta_1=\beta_2=..=\beta_p=0$. We test the null hypothesis,
+$$H_0: \beta_1=\beta_2=..=\beta_p=0$$
+versus at least one coefficient is non-zero, 
+$$H_\alpha: \beta_j \ne 0$$
+
+This hypothesis test is performed by computing the F-*statistic*,
+$$F=\frac{(TSS-RSS)/p}{RSS/(n-p-1)} \tag{3.23}$$
+
+
+
 ## 3.3 Other Considerations in the Regression Model 
 ### 3.3.1 Qualitative Predictors 
 ### 3.3.2 Extensions of the Linear Model 
